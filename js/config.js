@@ -153,7 +153,7 @@ var config = {
         maxZoom: 17,
         attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="https://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
       },
-      visible: true
+      visible:false
     },
     "OpenStreetMap": {
       url: '//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
@@ -161,7 +161,7 @@ var config = {
         maxZoom: 19,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       },
-      visible: true
+      visible: false
     },
     "OSM Hot": {
       url: '//{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
@@ -169,7 +169,7 @@ var config = {
         maxZoom: 19,
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       },
-      visible: true
+      visible: false
     },
     "OpenCycleMap": {
       url: function() {
@@ -179,7 +179,7 @@ var config = {
         maxZoom: 18,
         attribution: '&copy; <a href="https://www.thunderforest.com/">Thunderforest</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       },
-      visible: true
+      visible: false
     },
     "Sigma Cycle": {
       url: '//tiles1.sigma-dc-control.com/layer5/{z}/{x}/{y}.png',
@@ -197,7 +197,7 @@ var config = {
         maxZoom: 18,
         attribution: '&copy; <a href="https://www.thunderforest.com/">Thunderforest</a>, &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
       },
-      visible: false
+      visible: true
     },
     "OSM HikeBike": {
       //'http://{s}.tiles.wmflabs.org/hikebike/{z}/{x}/{y}.png'
@@ -213,7 +213,7 @@ var config = {
       options: {
         attribution: 'Tiles &copy; Esri &mdash; Esri and GIS Community'
       },
-      visible: false
+      visible: true
     },
     "ESRI Street": {
       url: '//server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
@@ -255,7 +255,7 @@ var config = {
         subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
         attribution: '&copy; Google'
       },
-      visible: true
+      visible: false
     },
     "Google Satellite": {
       url: '//{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
@@ -287,7 +287,7 @@ var config = {
         format: 'image/jpeg',
         attribution: "&copy; <a href='http://www.ign.fr'>IGN</a>"
       },
-      visible: true
+      visible: false
     },
     "FR IGN Express": {
       type: "wmts",
@@ -307,6 +307,7 @@ var config = {
     "FR IGN Satellite": {
       type: "wmts",
       url: "https://wxs.ign.fr/" + config.ign.key() + "/geoportail/wmts",
+      visible: false,
       options: {
           layer: 'ORTHOIMAGERY.ORTHOPHOTOS',
           style: 'normal',
@@ -327,7 +328,7 @@ var config = {
         continuousWorld: true,
         attribution: '© <a href="http://www.ign.es/ign/main/index.do" target="_blank">Instituto Geográfico Nacional de España</a>'
       },
-      visible: false
+      visible: true
     },
     "SP ICGC": {
       type: "wmts",
@@ -339,7 +340,7 @@ var config = {
           format: 'image/jpeg',
           attribution: "&copy; Institut Cartogràfic i Geològic de Catalunya - ICGC"
         },
-        visible: true
+        visible: false
     },
     "EU Huts": {
       url:'//maps.refuges.info/hiking/{z}/{x}/{y}.png',
@@ -347,14 +348,14 @@ var config = {
         maxZoom: 18,
         attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> | <a href="http://wiki.openstreetmap.org/wiki/Hiking/mri">MRI</a>'
       },
-      visible: true
+      visible: false
     },
     "FI MML": {
       url: "//avoin-karttakuva.maanmittauslaitos.fi/avoin/wmts/1.0.0/maastokartta/default/WGS84_Pseudo-Mercator/{z}/{y}/{x}.png",
       options: {
         attribution: "&copy; Maanmittauslaitos"
       },
-      visible: true
+      visible: false
     },
     "FI MapAnts": {
       url: '//wmts.mapant.fi/wmts_EPSG3857.php?z={z}&x={x}&y={y}',
